@@ -1,0 +1,81 @@
+/* Apply Lato font for body text */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Apply Bebas Neue for headings and logo */
+h1, h2, h3, .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+/* Define custom colors */
+:root {
+    --color-dark-bg: #222831;
+    --color-medium-bg: #393E46;
+    --color-light-text: #dcd6cc;
+    --color-mid-text: #bdb1a0;
+    --color-accent: #efe3d0;
+    --color-accent-hover: #e2d3bc;
+}
+
+/* Backgrounds and text colors */
+.bg-custom-dark { background-color: var(--color-dark-bg); }
+.bg-custom-medium { background-color: var(--color-medium-bg); }
+.text-custom-light { color: var(--color-light-text); }
+.text-custom-mid { color: var(--color-mid-text); }
+.text-custom-accent { color: var(--color-accent); }
+.hover\:text-custom-accent:hover { color: var(--color-accent-hover); }
+
+/* Border colors */
+.border-custom-medium { border-color: var(--color-medium-bg); }
+.border-custom-dark { border-color: var(--color-dark-bg); }
+
+/* Tags and scrollbars */
+.tag-bg { background-color: var(--color-medium-bg); }
+.tag-text { color: var(--color-mid-text); }
+.bg-custom-accent\/10 { background-color: rgba(102, 252, 241, 0.1); }
+
+/* Scrollbar styling */
+.horizontal-scroll::-webkit-scrollbar { height: 8px; }
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: var(--color-medium-bg);
+  border-radius: 10px;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-mid-text);
+  border-radius: 10px;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* Slideshow styling */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+.slideshow:hover img {
+  animation-play-state: paused;
+}
+
+/* Accent hover for text or buttons */
+.hover\:text-custom-accent:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Optional subtle glow effect for highlighted text */
+.text-custom-accent {
+  color: var(--color-accent);
+  /* text-shadow: 0 0 6px rgba(223, 208, 184, 0.3); */
+}
+
