@@ -79,3 +79,16 @@ h1, h2, h3, .nav-logo {
   /* text-shadow: 0 0 6px rgba(223, 208, 184, 0.3); */
 }
 
+/* Smooth snap scrolling on supported browsers */
+.horizontal-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* nice momentum on iOS */
+}
+
+/* Optional: reduce overscroll bounce on iOS if needed */
+.horizontal-scroll {
+  scroll-snap-type: x mandatory;
+}
+
+/* Each card already has snap-start via the Tailwind class */
+

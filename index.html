@@ -177,6 +177,8 @@ ones. The challenge increases as speed and difficulty ramp up over time. </p>
             </div>
         </div>
     </section>
+
+
 <!-- My Artworks Section -->
 <section id="artworks" class="py-16 bg-custom-dark">
   <div class="container mx-auto flex flex-col items-center" data-aos="fade-up">
@@ -186,16 +188,22 @@ ones. The challenge increases as speed and difficulty ramp up over time. </p>
 
     <!-- Centered Container Wrapper -->
     <div class="flex justify-center w-full">
-      <!-- Horizontal Scrolling Container -->
-      <div class="horizontal-scroll flex gap-8 overflow-x-auto pb-7 px-4 sm:px-6 lg:px-8 justify-center">
+      <!-- Horizontal Scrolling Container
+           - pl/pr to ensure first/last card are visible on mobile
+           - snap-x snap-mandatory for nice snapping behavior
+      -->
+      <div
+        class="horizontal-scroll flex gap-6 overflow-x-auto pb-7 pl-4 pr-4 sm:pl-6 sm:pr-6 lg:pl-8 lg:pr-8 snap-x snap-mandatory touch-pan-x"
+      >
         
         <!-- Artwork 1 -->
-        <a href="#" class="block group flex-shrink-0 w-80 md:w-96 uniform-card">
+        <a href="#"
+           class="block group flex-shrink-0 min-w-[18rem] sm:min-w-[20rem] md:w-80 md:w-96 uniform-card snap-start">
           <div class="overflow-hidden rounded-lg shadow-xl bg-custom-medium">
             <img src="assets/images/The_Minotaur.jpg" alt="The Minotaur"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 aspect-square">
           </div>
-          <div class="mt-4 text-center">
+          <div class="mt-4 text-center px-2">
             <h3 class="text-2xl font-bold group-hover:text-custom-accent transition-colors uppercase">
               The Minotaur
             </h3>
@@ -206,12 +214,13 @@ ones. The challenge increases as speed and difficulty ramp up over time. </p>
         </a>
 
         <!-- Artwork 2 -->
-        <a href="#" class="block group flex-shrink-0 w-80 md:w-96 uniform-card">
+        <a href="#"
+           class="block group flex-shrink-0 min-w-[18rem] sm:min-w-[20rem] md:w-80 md:w-96 uniform-card snap-start">
           <div class="overflow-hidden rounded-lg shadow-xl bg-custom-medium">
             <img src="assets/images/Magic_Well_copy.jpg" alt="Serenity Spring"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 aspect-square">
           </div>
-          <div class="mt-4 text-center">
+          <div class="mt-4 text-center px-2">
             <h3 class="text-2xl font-bold group-hover:text-custom-accent transition-colors uppercase">
               Serenity Spring
             </h3>
@@ -222,12 +231,13 @@ ones. The challenge increases as speed and difficulty ramp up over time. </p>
         </a>
 
         <!-- Artwork 3 -->
-        <a href="#" class="block group flex-shrink-0 w-80 md:w-96 uniform-card">
+        <a href="#"
+           class="block group flex-shrink-0 min-w-[18rem] sm:min-w-[20rem] md:w-80 md:w-96 uniform-card snap-start">
           <div class="overflow-hidden rounded-lg shadow-xl bg-custom-medium">
             <img src="assets/images/Sword_copy.png" alt="Edge of Eternity"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 aspect-square">
           </div>
-          <div class="mt-4 text-center">
+          <div class="mt-4 text-center px-2">
             <h3 class="text-2xl font-bold group-hover:text-custom-accent transition-colors uppercase">
               Edge of Eternity
             </h3>
@@ -241,7 +251,6 @@ ones. The challenge increases as speed and difficulty ramp up over time. </p>
     </div>
   </div>
 </section>
-
 
 <!-- 3D Model Slideshow Section -->
 <section id="3d-model" class="py-16 bg-custom-dark relative">
@@ -306,7 +315,7 @@ ones. The challenge increases as speed and difficulty ramp up over time. </p>
                             <p class="text-lg text-custom-mid mt-3 font-semibold uppercase">High Concept:</p>
                             <p class="text-lg text-custom-light mt-1">
 He woke up trapped and betrayed, his memory fractured, but his combat training razor sharp. Aiden Kessler, a former elite operative, is not a prisoner—he is a weapon who has just been pointed at his captors.
-His only path to freedom is brutal, frantic rampage to reclaim the pieces of his own violent history and to confront the mastermind who orchestrated his downfall                            </p>
+His only path to freedom is brutal, frantic rampage to reclaim the pieces of his own violent history and to confront the mastermind who orchestrated his downfall.                            </p>
                         </div>
                     </div>
                 </div>
@@ -327,7 +336,7 @@ Following a significant crisis, a large syndicate took control of a street known
 
 They enslaved the populace and blocked off the roadway. Local goons are on guard at every turn.
 
-An orphan boy decides to leave for a better life after realising that the only way out is across the rooftops, with adversaries (dogs, goons, etc.) chasing him                            </p>
+An orphan boy decides to leave for a better life after realising that the only way out is across the rooftops, with adversaries chasing him.                            </p>
                         </div>
                     </div>
                 </div>
